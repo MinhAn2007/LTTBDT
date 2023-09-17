@@ -1,9 +1,7 @@
-var bill = document.getElementById("txtBill").vaule;
 
-function btnClick() {
-    let tip = 0;
-    if (bill >= 50 && bill <= 300)
-        tip = (bill * 15) / 100;
-    else
-        tip = (bill * 20) / 100;
-}
+
+var bill = 275 // 40, 430
+
+var totalBill = (bill >= 50 && bill <= 300) ? bill * 0.15 : bill * 0.2;
+
+console.log(`The bill was ${bill}, the tip was ${totalBill}, and the total value ${bill + totalBill}`)
